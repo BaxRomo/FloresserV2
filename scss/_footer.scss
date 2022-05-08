@@ -1,0 +1,34 @@
+.foot {
+    grid-area: footer;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 55px;
+    background-color: #212121;
+    height: 110px;
+    width: 100%;
+    .enlace-foot {
+        padding: 15px 15px;
+        .logo-foot {
+            display: inline-block;
+            height: 80px;
+        }
+    }
+    .copyright {
+        @include texto ($txt2, 400);
+        align-self: center;
+        text-align: center;
+        color: white;
+    }
+    ul {
+        margin-right: 15px;
+        li {
+            display: inline-block;
+            line-height: 100px;
+            a {
+                font-size: $h3;
+                color: white;
+                padding: 7px 25px;
+            }
+        }
+    }
+}

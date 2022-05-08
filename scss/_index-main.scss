@@ -1,0 +1,29 @@
+main {
+    grid-area: equipo;
+    margin-left: 11%;
+
+    h2 {
+        @include titulos ($h2, 500)
+    }
+    img {
+        @include equipos (315px);
+        padding: 5px 5px;
+    }
+}
+
+.especialidades {
+    grid-area: espec;
+    background-color: white;
+    margin: auto 0;
+    h2 {
+        @include titulos ($h2, 500);
+    }
+    li {
+        font-size: $txt1;
+        margin: 5px 20px;
+        width: 65%;
+        color: #212121;
+        padding: 15px;
+        border-bottom: 2.2px solid #EAACA4;
+    }
+}

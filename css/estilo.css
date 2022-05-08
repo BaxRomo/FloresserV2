@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+  list-style: none; }
+
+.contenedor-index {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas: "nav nav nav" "head head head" "equipo equipo espec" "footer footer footer"; }
+
+nav {
+  grid-area: nav;
+  background-color: #212121;
+  height: 140px;
+  width: 100%; }
+  nav .enlace {
+    position: absolute;
+    padding: 20px 15px; }
+    nav .enlace .logo {
+      height: 100px; }
+  nav ul {
+    float: right;
+    margin-right: 100px; }
+    nav ul li {
+      display: inline-block;
+      line-height: 135px;
+      margin: 0 5px; }
+      nav ul li a {
+        color: white;
+        font-size: 30px;
+        padding: 20px 13px; }
+        nav ul li a:hover {
+          font-weight: 500;
+          transition: .5s; }
+  nav .checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 120px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none; }
+  nav #check {
+    display: none; }
+
+header {
+  grid-area: head;
+  background-color: white; }
+  header img {
+    width: 100%; }
+  header .opciones {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: -50px; }
+    header .opciones li {
+      background-color: #212121;
+      text-align: center;
+      width: 400px;
+      display: inline-block;
+      padding: 1.5%; }
+      header .opciones li a {
+        font-size: 30px;
+        color: white; }
+        header .opciones li a:hover {
+          font-weight: 500; }
+  header h1 {
+    font-size: 65px;
+    font-weight: 500;
+    margin: 0;
+    text-transform: uppercase;
+    text-align: center; }
+    header h1 span {
+      color: #EAACA4; }
+  header p {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.7em;
+    width: 85%;
+    display: block;
+    margin: 0 auto;
+    padding: 20px 10px;
+    text-align: justify; }
+
+main {
+  grid-area: equipo;
+  margin-left: 11%; }
+  main h2 {
+    font-size: 45px;
+    font-weight: 500;
+    margin: 0; }
+  main img {
+    width: 315px;
+    opacity: 95%;
+    padding-top: 25px;
+    padding: 5px 5px; }
+    main img:hover {
+      opacity: 100%; }
+
+.especialidades {
+  grid-area: espec;
+  background-color: white;
+  margin: auto 0; }
+  .especialidades h2 {
+    font-size: 45px;
+    font-weight: 500;
+    margin: 0; }
+  .especialidades li {
+    font-size: 24px;
+    margin: 5px 20px;
+    width: 65%;
+    color: #212121;
+    padding: 15px;
+    border-bottom: 2.2px solid #EAACA4; }
+
+.foot {
+  grid-area: footer;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 55px;
+  background-color: #212121;
+  height: 110px;
+  width: 100%; }
+  .foot .enlace-foot {
+    padding: 15px 15px; }
+    .foot .enlace-foot .logo-foot {
+      display: inline-block;
+      height: 80px; }
+  .foot .copyright {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.7em;
+    align-self: center;
+    text-align: center;
+    color: white; }
+  .foot ul {
+    margin-right: 15px; }
+    .foot ul li {
+      display: inline-block;
+      line-height: 100px; }
+      .foot ul li a {
+        font-size: 40px;
+        color: white;
+        padding: 7px 25px; }

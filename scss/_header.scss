@@ -1,0 +1,43 @@
+header {
+    grid-area: head;
+    background-color: white;
+    img {
+        width: 100%;
+    }
+    .opciones {
+        display: flex;
+        justify-content: space-evenly;
+        position: relative;
+        top: -50px;
+        li {
+            background-color: #212121;
+            text-align: center;
+            width: 400px;
+            display: inline-block;
+            padding: 1.5%;
+            a {
+                font-size: $txt1 + 6px;
+                color: white;
+                &:hover {
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+    h1 {
+        @include titulos ($h1, 500);
+        text-transform: uppercase;
+        text-align: center;
+        span {
+            color: $color-secundario;
+        }
+    }
+    p {
+        @include texto ($txt1, 400);
+        width: 85%;
+        display: block;
+        margin: 0 auto;
+        padding: $layout-padding;
+        text-align: justify;
+    }
+}
