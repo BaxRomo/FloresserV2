@@ -1,0 +1,44 @@
+.contenedor_nosotros {
+    .nosotros {
+        grid-area: nos;
+        width: 100%;
+        h1 {
+            @include titulos ($h1, 500);
+            text-transform: uppercase;
+            text-align: center;
+            span {
+                color: $color-secundario;
+            }
+        }
+        p {
+            @include texto ($txt1, 400);
+            width: 85%;
+            display: block;
+            margin: 0 auto;
+            padding: $layout-padding;
+            text-align: justify;
+        }
+    }
+
+    .mviva{ 
+        grid-area: mvv;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        margin: 10px 0;
+        grid-column: span 3;
+        text-align: justify;
+        h2{
+            text-align: center;
+            @include titulos ($h2, 500);
+            margin: 10px 0;
+        }
+        img {
+            width: 100%;
+        }
+        .mision, .vision, .valores {
+            padding: 20px 20px;
+            width: 450px;
+        }
+    }
+}

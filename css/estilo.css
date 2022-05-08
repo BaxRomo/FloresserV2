@@ -6,12 +6,19 @@
   text-decoration: none;
   list-style: none; }
 
-.contenedor-index {
+.contenedor_index {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, auto);
   grid-template-rows: repeat(4, auto);
   grid-template-areas: "nav nav nav" "head head head" "equipo equipo espec" "footer footer footer"; }
+
+.contenedor_nosotros {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas: "nav nav nav" "head head head" "nos nos nos" "mvv mvv mvv" "footer footer footer"; }
 
 nav {
   grid-area: nav;
@@ -81,42 +88,85 @@ header {
     font-size: 24px;
     font-weight: 400;
     line-height: 1.7em;
+    margin: 0;
     width: 85%;
     display: block;
     margin: 0 auto;
     padding: 20px 10px;
     text-align: justify; }
 
-main {
+.contenedor_index main {
   grid-area: equipo;
   margin-left: 11%; }
-  main h2 {
+  .contenedor_index main h2 {
     font-size: 45px;
     font-weight: 500;
     margin: 0; }
-  main img {
+  .contenedor_index main img {
     width: 315px;
     opacity: 95%;
     padding-top: 25px;
     padding: 5px 5px; }
-    main img:hover {
+    .contenedor_index main img:hover {
       opacity: 100%; }
 
-.especialidades {
+.contenedor_index .especialidades {
   grid-area: espec;
   background-color: white;
   margin: auto 0; }
-  .especialidades h2 {
+  .contenedor_index .especialidades h2 {
     font-size: 45px;
     font-weight: 500;
     margin: 0; }
-  .especialidades li {
+  .contenedor_index .especialidades li {
     font-size: 24px;
     margin: 5px 20px;
     width: 65%;
     color: #212121;
     padding: 15px;
     border-bottom: 2.2px solid #EAACA4; }
+
+.contenedor_nosotros .nosotros {
+  grid-area: nos;
+  width: 100%; }
+  .contenedor_nosotros .nosotros h1 {
+    font-size: 65px;
+    font-weight: 500;
+    margin: 0;
+    text-transform: uppercase;
+    text-align: center; }
+    .contenedor_nosotros .nosotros h1 span {
+      color: #EAACA4; }
+  .contenedor_nosotros .nosotros p {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.7em;
+    margin: 0;
+    width: 85%;
+    display: block;
+    margin: 0 auto;
+    padding: 20px 10px;
+    text-align: justify; }
+
+.contenedor_nosotros .mviva {
+  grid-area: mvv;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 10px 0;
+  grid-column: span 3;
+  text-align: justify; }
+  .contenedor_nosotros .mviva h2 {
+    text-align: center;
+    font-size: 45px;
+    font-weight: 500;
+    margin: 0;
+    margin: 10px 0; }
+  .contenedor_nosotros .mviva img {
+    width: 100%; }
+  .contenedor_nosotros .mviva .mision, .contenedor_nosotros .mviva .vision, .contenedor_nosotros .mviva .valores {
+    padding: 20px 20px;
+    width: 450px; }
 
 .foot {
   grid-area: footer;
@@ -135,6 +185,7 @@ main {
     font-size: 18px;
     font-weight: 400;
     line-height: 1.7em;
+    margin: 0;
     align-self: center;
     text-align: center;
     color: white; }

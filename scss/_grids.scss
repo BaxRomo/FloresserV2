@@ -1,4 +1,4 @@
-.contenedor-index {
+.contenedor_index {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, auto);
@@ -8,4 +8,17 @@
     "head head head"
     "equipo equipo espec"
     "footer footer footer"; 
+}
+
+.contenedor_nosotros {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas: 
+        "nav nav nav"
+        "head head head"
+        "nos nos nos"
+        "mvv mvv mvv"
+        "footer footer footer";
 }

@@ -9,7 +9,6 @@ $layout-padding: 20px 10px;
 $color-primario: #212121;
 $color-secundario: #EAACA4;
 
-
 @mixin titulos ($fsize, $fweight) {
     font-size: $fsize;
     font-weight: $fweight;
@@ -20,6 +19,7 @@ $color-secundario: #EAACA4;
     font-size: $fsize;
     font-weight: $fweight;
     line-height: 1.7em;
+    margin: 0;
 }
 
 @mixin equipos ($isize) {
@@ -28,5 +28,18 @@ $color-secundario: #EAACA4;
     padding-top: 25px;
     &:hover {
         opacity: 100%;
+    }
+}
+
+@mixin misvisval ($width, $width2) {
+    width: $width;
+    h2{
+        text-align: center;
+    }
+    p {
+        text-align: justify;
+    }
+    img {
+        width: $width2;
     }
 }
