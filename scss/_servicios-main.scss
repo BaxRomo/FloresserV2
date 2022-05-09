@@ -1,0 +1,35 @@
+.servicios {
+    grid-area: main;
+    margin: 10px 85px;
+    margin-bottom: 35px; 
+
+    .especialidades {
+        h2{
+            font-size: $h2;
+            text-align: center;
+            padding: 10px;
+            margin-top: 15px;
+        }
+        p{
+            @include texto ($txt1, 400)
+            padding: $layout-padding;
+            text-align: justify;
+        }
+        table {
+            width: 100%;
+            margin: 20px 0;
+            td {
+                padding: 10px;
+                background-color: $color-secundario;
+                opacity: 65%;
+                font-size: 28px;
+                text-align: center;
+                color: $color-primario;
+                border-radius: .3rem;
+                &:hover {
+                    opacity: 100%
+                }
+            }
+        }
+    }
+}

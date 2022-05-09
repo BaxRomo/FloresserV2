@@ -8,6 +8,7 @@ $txt4: 14px;
 $layout-padding: 20px 10px;
 $color-primario: #212121;
 $color-secundario: #EAACA4;
+$border-form: 2px groove $color-secundario;
 
 @mixin titulos ($fsize, $fweight) {
     font-size: $fsize;

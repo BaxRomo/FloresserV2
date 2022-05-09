@@ -1,0 +1,78 @@
+.contenedor_contacto {
+    margin: auto 0;
+    .mapa {
+        grid-area: ubic;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .ubicacion {
+        h2 {
+            @include titulos ($h2, 500);
+            margin-bottom: 10px;
+        }
+        li {
+            @include texto ($txt2, 400)
+            display: inline;
+            text-align: left;
+            background-color: white;
+            width: 90%;
+            text-align: left;
+            span {
+                @include texto ($txt2, 600)
+            } 
+        }
+        iframe {
+            width: 100%;
+            margin-top: 25px;
+        }
+    }
+         
+    .contacto {
+        grid-area: cont; 
+        
+        .formulario {
+            background-color: $color-secundario;
+            padding: 25px;
+            width: 90%;
+            
+            h2 {
+                font-size: $h2;
+                padding-bottom: 15px;
+            }
+            input {
+                width: 100%;
+                margin-bottom: 10px;
+                font-size: 15px;
+            }
+            .controlFormulario {
+                height: 35px;
+                background-color: white;
+                padding-left: 10px;
+                border: $border-form;
+                opacity: 65%;
+            }
+              
+            .mensaje {
+                display: block;
+                width: 100%;
+                height: 200px;
+                margin-bottom: 10px;
+                padding: 10px;
+                resize: none; 
+                background-color: white;
+                border: $border-form;
+                opacity: 65%;
+            }
+              
+            .controlBoton {
+                width: 295px;
+                padding: 10px;
+                background-color: white;
+                border: $border-form;
+                opacity: 65%;
+                display: inline-block;
+            }
+        }
+    }
+}

@@ -22,3 +22,28 @@
         "mvv mvv mvv"
         "footer footer footer";
 }
+
+.contenedor_main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: 
+    "nav nav nav"
+    "head head head"
+    "main main main"
+    "footer footer footer";
+}
+
+.contenedor_contacto {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: 
+    "nav nav nav"
+    "head head head"
+    "ubic ubic cont"
+    "footer footer footer";
+}
+
