@@ -109,30 +109,30 @@ header {
     padding: 20px 10px;
     text-align: justify; }
 
-.contenedor_index main {
+.equipo-psic {
   grid-area: equipo;
   margin-left: 11%; }
-  .contenedor_index main h2 {
+  .equipo-psic h2 {
     font-size: 45px;
     font-weight: 500;
     margin: 0; }
-  .contenedor_index main img {
+  .equipo-psic img {
     width: 315px;
     opacity: 95%;
     padding-top: 25px;
     padding: 5px 5px; }
-    .contenedor_index main img:hover {
+    .equipo-psic img:hover {
       opacity: 100%; }
 
-.contenedor_index .especialidades {
+.especialidades {
   grid-area: espec;
   background-color: white;
   margin: auto 0; }
-  .contenedor_index .especialidades h2 {
+  .especialidades h2 {
     font-size: 45px;
     font-weight: 500;
     margin: 0; }
-  .contenedor_index .especialidades li {
+  .especialidades li {
     font-size: 24px;
     margin: 5px 20px;
     width: 65%;
@@ -140,18 +140,18 @@ header {
     padding: 15px;
     border-bottom: 2.2px solid #EAACA4; }
 
-.contenedor_nosotros .nosotros {
+.nosotros {
   grid-area: nos;
   width: 100%; }
-  .contenedor_nosotros .nosotros h1 {
+  .nosotros h1 {
     font-size: 65px;
     font-weight: 500;
     margin: 0;
     text-transform: uppercase;
     text-align: center; }
-    .contenedor_nosotros .nosotros h1 span {
+    .nosotros h1 span {
       color: #EAACA4; }
-  .contenedor_nosotros .nosotros p {
+  .nosotros p {
     font-size: 24px;
     font-weight: 400;
     line-height: 1.7em;
@@ -162,7 +162,7 @@ header {
     padding: 20px 10px;
     text-align: justify; }
 
-.contenedor_nosotros .mviva {
+.mviva {
   grid-area: mvv;
   display: flex;
   justify-content: space-evenly;
@@ -170,15 +170,15 @@ header {
   margin: 10px 0;
   grid-column: span 3;
   text-align: justify; }
-  .contenedor_nosotros .mviva h2 {
+  .mviva h2 {
     text-align: center;
     font-size: 45px;
     font-weight: 500;
     margin: 0;
     margin: 10px 0; }
-  .contenedor_nosotros .mviva img {
+  .mviva img {
     width: 100%; }
-  .contenedor_nosotros .mviva .mision, .contenedor_nosotros .mviva .vision, .contenedor_nosotros .mviva .valores {
+  .mviva .mision, .mviva .vision, .mviva .valores {
     padding: 20px 20px;
     width: 450px; }
 
